@@ -124,6 +124,7 @@ header li {
   background-color: #1cedae;
 }
 
+.page .heading,
 .home .heading {
   font-size: 40px;
   font-style: italic;
