@@ -2,13 +2,13 @@ import React from 'react'
 import { trabajos } from '../data/trabajos';
 import { Link } from 'react-router-dom';
 
-export const ListadoTrabajos = () => {
+export const ListadoTrabajos = ({limite = 10}) => {
   return (
       <section className='works'>
 
         {
             //utilizamos returno por ser una funcioón de callback
-            trabajos.map(trabajo => {
+            trabajos.slice(0,limite).map(trabajo => {
               //console para mostrar trabajo
               //console.log(trabajo);
               return (

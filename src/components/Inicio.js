@@ -11,7 +11,7 @@ export const Inicio = () => {
         seguiremos informando en breve.
       </h1>
 
-      <h2>
+      <h2 className='title'>
         Te ayudo a crear tu propio sitio o aplicaciones web, tener
         más visibilidad y relevancia en internet. <Link to="/contacto">Contáctanos.</Link>
       </h2>
@@ -20,7 +20,8 @@ export const Inicio = () => {
         <h2 className='heading'>Algunos proyectos</h2>
         <p>Estos son algunos de los diversos trabajos</p>
 
-        <ListadoTrabajos />
+        {/* se le coloca una props */}
+        <ListadoTrabajos limite="3" />
       </section>
 
     </div>
